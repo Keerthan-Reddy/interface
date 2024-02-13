@@ -1,0 +1,245 @@
+html {
+  overflow: hidden;
+
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #dbf4ff;
+}
+body {
+  /* overflow: hidden; */
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #dbf4ff;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.image-gallery {
+  height: 20%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  overflow-y: hidden;
+  padding: 6px;
+}
+
+.image-gallery img {
+  display: inline-block;
+  height: 100%;
+  margin-right: 4px;
+  border-radius: 7px;
+  border-style: inset;
+  border-color: #012970;
+}
+
+.image-gallery-1 {
+  display: none;
+  height: 20%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  overflow-y: hidden;
+  padding: 6px;
+}
+
+.image-gallery-1 img {
+  display: inline-block;
+  height: 100%;
+  margin-right: 4px;
+  border-radius: 7px;
+  border-style: inset;
+  border-color: #012970;
+}
+
+.logo img {
+  width: 250px;
+  height: 100px;
+}
+.logo {
+  position: absolute;
+  top: -12px;
+  left: -5px;
+  z-index: 9999;
+}
+
+/* icons css */
+.icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -5px;
+  padding: 0px;
+  margin-top: 80px;
+  gap: 40px;
+}
+
+.position {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.icon-image {
+  height: 90px;
+  width: 90px;
+}
+
+.map-frame {
+  overflow: hidden;
+  width: 130%;
+  margin-left: -15%;
+  height: 80%;
+}
+
+.gallery-button {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 50%;
+}
+
+.gallery > img {
+  overflow-x: scroll;
+  white-space: nowrap;
+  overflow-y: hidden;
+  padding: 6px;
+}
+
+/* new css for gallery */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-gal {
+  max-width: 95%;
+  margin: 20px auto;
+}
+
+.container-gal .title {
+  font-size: 50px;
+  background-color: none;
+  color: #012970;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 15px;
+  margin-top: 60px;
+}
+
+.container-gal .image-container {
+  columns: 3 250px;
+  gap: 15px;
+}
+
+.container-gal .image-container img {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.container-gal {
+  display: hidden;
+}
+
+.text-box {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+
+  border: 1px solid;
+  border-radius: 10px;
+  position: absolute;
+  right: 75px;
+  top: 240px;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.3s;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+  .text-box {
+    max-width: 200px;
+    right: 65px;
+    top: 175px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .icons {
+    margin-top: 40px;
+    gap: 40px;
+  }
+  .icon-image {
+    height: 70px;
+    width: 70px;
+  }
+
+  .text-box {
+    max-width: 250px;
+    right: 65px;
+    top: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .icons {
+    margin-top: 40px;
+    gap: 40px;
+  }
+
+  .icon-image {
+    height: 70px;
+    width: 70px;
+  }
+  .text-box {
+    right: 65px;
+    top: 180px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .icons {
+    margin-top: 40px;
+    gap: 40px;
+  }
+  .icon-image {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .icons {
+    margin-top: 30px;
+    gap: 40px;
+  }
+  .icon-image {
+    height: 70px;
+    width: 70px;
+  }
+
+  .text-box {
+    right: 65px;
+    top: 180px;
+  }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}" />
+
+    <title>{{ client.name }}</title>
+    <script>
+      function changeIframe(url) {
+        document.getElementById("myIframe").src = url;
+      }
+
+      function ButtonFunction() {
+        var virtual = document.getElementById("container");
+        var icon = document.getElementById("icon-gallery");
+        var g = document.getElementById("gallery");
+
+        var i1 = document.getElementById("1");
+        var i2 = document.getElementById("2");
+        var i3 = document.getElementById("3");
+        var i4 = document.getElementById("4");
+        var i5 = document.getElementById("5");
+
+        if (virtual.style.display === "none") {
+          virtual.style.display = "block";
+          icon.src = "{% static 'images/gallery.png' %}";
+
+          g.style.display = "none";
+
+          i1.style.display = "block";
+          i2.style.display = "block";
+          i3.style.display = "block";
+          i4.style.display = "block";
+
+          document.body.style.overflow = "hidden"; // Change overflow for body
+          document.documentElement.style.overflow = "hidden"; // Change overflow for html
+        } else {
+          virtual.style.display = "none";
+          icon.src = "{% static 'images/360.png' %}";
+
+          g.style.display = "block";
+
+          i1.style.display = "none";
+          i2.style.display = "none";
+          i3.style.display = "none";
+          i4.style.display = "none";
+
+          i5.style.marginTop = "-25px";
+
+          document.body.style.overflow = "auto"; // Restore default overflow for body
+          document.documentElement.style.overflow = "auto"; // Restore default overflow for html
+        }
+      }
+
+      function Box() {
+        var box = document.getElementById("box");
+        if (box.style.display === "none") {
+          box.style.display = "block";
+        } else {
+          box.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <body id="main">
+    <div class="logo">
+      <a href="{{ client.website }}"
+        ><img src="{% static 'images/logo3.svg' %}" alt="MetaSketch"
+      /></a>
+    </div>
+
+    <div class="text-box" id="box" style="display: none">
+      <p>{{ client.info }}</p>
+    </div>
+
+    <div class="icons">
+      <div class="call-icon" id="2">
+        <a href="tel:{{ client.number }}"
+          ><img
+            src="{% static 'images/2.png' %}"
+            alt="MetaSketch"
+            class="icon-image"
+        /></a>
+      </div>
+
+      <div class="info-icon" id="1">
+        <img
+          onclick="Box()"
+          src="{% static 'images/1.png' %}"
+          alt="MetaSketch"
+          class="icon-image"
+        />
+      </div>
+
+      <div class="location-icon" id="3">
+        <a href="{{ client.location }}" target="_blank"
+          ><img
+            src="{% static 'images/3.png' %}"
+            alt="MetaSketch"
+            class="icon-image"
+        /></a>
+      </div>
+
+      <div class="website-icon" id="4">
+        <a href="{{ client.website }}" target="_blank"
+          ><img
+            src="{% static 'images/4.png' %}"
+            alt="MetaSketch"
+            class="icon-image"
+        /></a>
+      </div>
+
+      <div class="gallery-icon" id="5">
+        <img
+          onclick="ButtonFunction()"
+          src="{% static 'images/gallery.png' %}"
+          alt="MetaSketch"
+          class="icon-image"
+          id="icon-gallery"
+        />
+      </div>
+    </div>
+
+    <div class="container" id="container">
+      <iframe
+        id="myIframe"
+        src="{{ client.default_link }}"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="map-frame"
+      ></iframe>
+
+      <div class="image-gallery" id="default-img">
+        {% for image_link in image_links %}
+        <img
+          class="image"
+          src="{{ image_link.image.url }}"
+          alt="Main Entrance"
+          onclick="changeIframe('{{ image_link.url }}')"
+        />
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="container-gal" id="gallery">
+      <h1 class="title">Gallery</h1>
+
+      <div class="image-container">
+        {% for i in other_images %}
+        <img src="{{ i.image.url }}" alt="" />
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>
