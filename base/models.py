@@ -23,6 +23,14 @@ class ImageWithLink(models.Model):
             return f"image with link : {self.client} ({duplicate_count + 1})"
         else:
             return f"image with link : {self.client}"
+        
+class NewProjects(models.Model):
+    name = models.CharField(max_length=100, default="")
+    projecturl = models.URLField(max_length=1000)
+    
+    def __str__(self):
+        return self.name
+    
     
     
 

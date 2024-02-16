@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metasketch | Projects</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style2.css' %}" />
+    
+   
+
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+  
+    <!-- 
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+    <!-- 
+      - preload images
+    -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <link rel="shortcut icon" href="./logo4.png" type="image/svg+xml">
+
+</head>
+
+<body>
+
+    <header class="header" data-header>
+        <div class="container">
+    
+            <a href="/" class="logo">
+                <img src="{% static 'home-images/logo1.svg' %}" width="300" height="52" alt="dprod logo">
+              </a>
+    
+          <nav class="navbar" data-navbar>
+    
+            <p class="navbar-title">Main Menu</p>
+    
+            <ul class="navbar-list">
+    
+              <!-- <li class="navbar-item">
+                <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+              </li> -->
+    
+              <!-- <li class="navbar-item">
+                <a href="#about" class="navbar-link" data-nav-link>About</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#services" class="navbar-link" data-nav-link>Services</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+              </li> -->
+    
+            </ul>
+    
+          </nav>
+    
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+    
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd99Z2YV9cYqAElqvBikEUHb46Nnrda68oz3Emn_ZpF7RS8Jg/viewform?usp=sf_link" target="_blank" class="btn btn-primary">Contact Us</a>
+    
+          <div class="overlay" data-nav-toggler data-overlay></div>
+    
+        </div>
+      </header>
+    
+
+    <section class="section project" aria-label="project" ">
+        <div class="container">
+    
+          <div class="title-wrapper">
+    
+            <div>
+              <h2 class="h2 section-title">
+                View our <span class="span">Projects</span>
+              </h2>
+    
+              <!-- <p class="section-text">
+                Aliquam tristique libero at dui sodales, et placerat orci lobortis. Donec metus lorem, vulputate at
+                sapien sit amet,
+                auctor iaculis lorem.
+              </p> -->
+            </div>
+    
+            
+          </div>
+    
+          <ul class="project-list">
+    
+            <li>
+              <div class="project-card">
+                <a href="bontrue">
+                <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
+                  <img src="{% static 'home-images/1.jpg' %}" width="615" height="391" loading="lazy"
+                    alt="Plastic Credit Card" class="img-cover">
+                </figure>
+              </a>
+    
+                <div class="card-content">
+    
+                  <div>
+                    <h2 class="h3">
+                      <a href="#" class="card-title hover:underline">Bontrue</a>
+                    </h2>
+    
+                     <p class="card-tag">Banjara Hills, Hyderabad</p>
+                  </div>
+    
+                  
+    
+                </div> 
+    
+              </div>
+            </li>
+    
+            <li>
+              <div class="project-card">
+                <a href="omsreegallaxy">
+                <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
+                  <img src="{% static 'home-images/2.jpg' %}" width="615" height="391" loading="lazy" alt="3D Illustration"
+                    class="img-cover">
+                </figure>
+                </a>
+    
+                <div class="card-content">
+    
+                    <div>
+                        <h2 class="h3">
+                          <a href="#" class="card-title hover:underline">Om Sree Gallaxy</a>
+                        </h2>
+        
+                         <p class="card-tag">Gundlapochampalli, Hyderabad</p>
+                      </div>
+      
+                    
+      
+                  </div> 
+    
+              </div>
+    
+              
+            </li>
+
+            <li>
+              <div class="project-card">
+                <a href="omsreeheights">
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="{% static 'home-images/10.jpg' %}" width="390" height="391" loading="lazy"
+                    alt="Statistics Mobile App" class="img-cover">
+                </figure>
+                </a>
+                <div class="card-content">
+    
+                  <div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title hover:underline">Om Sree Heights</a>
+                    </h3>
+    
+                    <p class="card-tag">Secunderabad, Telangana</p>
+                  </div>
+    
+                  <a href="#" class="card-link" aria-label="product details">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+    
+                </div>
+    
+              </div>
+            </li>
+    
+            <li>
+              <div class="project-card">
+                <a href="muscletechgym">
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="{% static 'home-images/9.jpg' %}" width="390" height="391" loading="lazy"
+                    alt="Color Blending Effect" class="img-cover">
+                </figure>
+              </a>
+    
+                <div class="card-content">
+    
+                  <div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title hover:underline">Muscle tech gym</a>
+                    </h3>
+    
+                    <p class="card-tag">Miyapur, Hyderabad</p>
+                  </div>
+    
+                  <a href="#" class="card-link" aria-label="product details">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+    
+                </div>
+    
+              </div>
+            </li>
+    
+            <li>
+              <div class="project-card">
+                <a href="omsreebrilliance">
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="{% static 'home-images/8.jpg' %}" width="390" height="391" loading="lazy" alt="3D Animation"
+                    class="img-cover">
+                </figure>
+                </a>
+    
+                <div class="card-content">
+    
+                  <div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title hover:underline">Om Sree Brilliance</a>
+                    </h3>
+    
+                    <p class="card-tag">Sainikpuri, Telangana</p>
+                  </div>
+    
+                  <a href="#" class="card-link" aria-label="product details">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+    
+                </div>
+    
+              </div>
+            </li> 
+    
+            
+
+    
+          </ul>
+    
+          <ul class="project-list" style="padding-top: 70px;">
+    
+            <li>
+              <div class="project-card">
+                <a href="youcanfitness">
+                <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
+                  <img src="{% static 'home-images/3.jpg' %}" width="615" height="391" loading="lazy"
+                    alt="Plastic Credit Card" class="img-cover">
+                </figure>
+              </a>
+    
+              <div class="card-content">
+    
+                <div>
+                    <h2 class="h3">
+                      <a href="#" class="card-title hover:underline">You Can Fitness</a>
+                    </h2>
+    
+                     <p class="card-tag">Kondapur, Hyderabad</p>
+                  </div>
+  
+                
+  
+              </div> 
+    
+              </div>
+            </li>
+    
+            <li>
+              <div class="project-card">
+                <a href="UR7STARFITNESS">
+                <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
+                  <img src="{% static 'home-images/4.jpg' %}" width="615" height="391" loading="lazy" alt="3D Illustration"
+                    class="img-cover">
+                </figure>
+                </a>
+    
+                <div class="card-content">
+    
+                    <div>
+                        <h2 class="h3">
+                          <a href="#" class="card-title hover:underline">UR 7STAR FITNESS</a>
+                        </h2>
+        
+                         <p class="card-tag">Suncity, Hyderabad</p>
+                      </div>
+      
+                    
+      
+                  </div> 
+    
+              </div>
+    
+              
+            </li>
+    
+            
+
+
+            <li>
+              <div class="project-card">
+                <a href="HungerBuddies">
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="{% static 'home-images/5.jpg' %}" width="390" height="391" loading="lazy"
+                    alt="Statistics Mobile App" class="img-cover">
+                </figure>
+                </a>
+    
+                <div class="card-content">
+    
+                    <div>
+                      <h2 class="h3">
+                        <a href="#" class="card-title hover:underline">Hunger Buddies</a>
+                      </h2>
+      
+                       <p class="card-tag">Bandlaguda, Hyderabad</p>
+                    </div>
+      
+                    
+      
+                  </div> 
+    
+              </div>
+            </li>
+    
+            <li>
+              <div class="project-card">
+                <a href="FitnessPlanetGym">
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="{% static 'home-images/6.jpg' %}" width="390" height="391" loading="lazy"
+                    alt="Color Blending Effect" class="img-cover">
+                </figure>
+                </a>
+    
+                <div class="card-content">
+    
+                    <div>
+                      <h2 class="h3">
+                        <a href="#" class="card-title hover:underline">Fitness planet gym</a>
+                      </h2>
+      
+                       <p class="card-tag">Bandlaguda, Hyderabad</p>
+                    </div>
+      
+                    
+      
+                  </div> 
+    
+              </div>
+            </li>
+    
+            <li>
+              <div class="project-card">
+                <a href="KingsResturant">
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="{% static 'home-images/7.jpeg' %}" width="390" height="391" loading="lazy" alt="3D Animation"
+                    class="img-cover">
+                </figure>
+              </a>
+    
+                <div class="card-content">
+    
+                    <div>
+                      <h2 class="h3">
+                        <a href="#" class="card-title hover:underline">Kings Resturant</a>
+                      </h2>
+      
+                       <p class="card-tag">Kondapur, Hyderabad</p>
+                    </div>
+      
+                    
+      
+                  </div> 
+    
+              </div>
+            </li>
+    
+          </ul>
+
+          <ul class="project-list" style="padding-top: 70px;">
+    
+            <li>
+              <div class="project-card">
+                <a href="GarudaPushkarini">
+                <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
+                  <img src="{% static 'home-images/11.png' %}" width="615" height="391" loading="lazy"
+                    alt="Plastic Credit Card" class="img-cover">
+                </figure>
+              </a>
+    
+              <div class="card-content">
+    
+                <div>
+                    <h2 class="h3">
+                      <a href="#" class="card-title hover:underline">Garuda Pushkarini Stepwell</a>
+                    </h2>
+    
+                     <p class="card-tag">Wanaparthy, Telangana</p>
+                  </div>
+  
+                
+  
+              </div> 
+    
+              </div>
+            </li>
+    
+            <li>
+              <div class="project-card">
+                <a href="Firstcry">
+                <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
+                  <img src="{% static 'home-images/12.jpg' %}" width="615" height="391" loading="lazy" alt="3D Illustration"
+                    class="img-cover">
+                </figure>
+                </a>
+    
+                <div class="card-content">
+    
+                    <div>
+                        <h2 class="h3">
+                          <a href="#" class="card-title hover:underline">Firstcry Intellitots Preschool</a>
+                        </h2>
+        
+                         <p class="card-tag">Ghatkesar, Hyderabad</p>
+                      </div>
+      
+                    
+      
+                  </div> 
+    
+              </div>
+    
+              
+            </li>
+    
+            
+
+
+            <li>
+              <div class="project-card">
+                <a href="BoltFitness">
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="{% static 'home-images/13.jpg' %}" width="390" height="391" loading="lazy"
+                    alt="Statistics Mobile App" class="img-cover">
+                </figure>
+                </a>
+    
+                <div class="card-content">
+    
+                    <div>
+                      <h2 class="h3">
+                        <a href="#" class="card-title hover:underline">The Bolt Fitness</a>
+                      </h2>
+      
+                       <p class="card-tag">Narsingi, Hyderabad</p>
+                    </div>
+      
+                    
+      
+                  </div> 
+    
+              </div>
+            </li>
+    
+            <li >
+              <div class="project-card">
+                <a href="Khajaguda">
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="{% static 'home-images/14.jpg' %}" width="390" height="391" loading="lazy"
+                    alt="Color Blending Effect" class="img-cover">
+                </figure>
+                </a>
+    
+                <div class="card-content">
+    
+                    <div>
+                      <h2 class="h3">
+                        <a href="#" class="card-title hover:underline">Khajaguda Hills</a>
+                      </h2>
+      
+                       <p class="card-tag">Khajaguda,Telangana</p>
+                    </div>
+      
+                    
+      
+                  </div> 
+    
+              </div>
+            </li>
+    
+            <li style="display: none;">
+              <div class="project-card">
+                <a href="KingsResturant">
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="{% static 'home-images/7.jpg' %}" width="390" height="391" loading="lazy" alt="3D Animation"
+                    class="img-cover">
+                </figure>
+              </a>
+    
+                <div class="card-content">
+    
+                    <div>
+                      <h2 class="h3">
+                        <a href="#" class="card-title hover:underline">Kings Resturant</a>
+                      </h2>
+      
+                       <p class="card-tag">Kondapur, Hyderabad</p>
+                    </div>
+      
+                    
+      
+                  </div> 
+    
+              </div>
+            </li>
+    
+          </ul>
+    
+        </div>
+      </section>
+                              
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'home-images/logo1.svg' %}" width="209" height="52" alt="dprod logo">
+          </a>
+
+          <a href="metasketch.co@gmail.com" class="footer-link">metasketch.co@gmailcom</a>
+
+          <a href="tel:+91 9347950266" class="footer-link">+91 9347950266</a>
+
+          <ul class="social-list">
+
+            
+
+            <li>
+              <a href="https://www.linkedin.com/company/metasketch/" class="social-link">
+                
+                <img src="{% static 'home-images/linkedin-icon.png' %}" alt="">
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/metasketch_/" class="social-link">
+                <img src="{% static 'home-images/linstagram-icon.png' %}" alt="">
+              </a>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+
+       
+     
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          Copyright 2023 All Rights Reserved by<br> 
+          Metasketch Technology Private Limited
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+                                          
+</body>
+</html>

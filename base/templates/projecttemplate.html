@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MetaSketch | {{ client_name }}</title>
+    {% load static %}
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./logo4.png" type="image/svg+xml" />
+
+    <style>
+      body {
+        overflow-y: hidden; /* Hide vertical scrollbar */
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+      }
+
+      .image-container {
+        position: fixed;
+        top: -11px; /* Adjust the top value as needed */
+        left: 0px; /* Adjust the left value as needed */
+        z-index: 9999; /* Ensure the image appears on top of other elements */
+      }
+      .image-container img {
+        width: 250px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <a href="{% static 'projects' %}">
+        <img src="{% static 'home-images/logo3.svg' %}" alt="Your Image" />
+      </a>
+    </div>
+
+    <iframe
+      name="maps"
+      src="{{ projecturl }}"
+      width="100%"
+      height="100%"
+      style="border: 0px"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </body>
+</html>
