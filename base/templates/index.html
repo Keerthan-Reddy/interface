@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="publisuites-verify-code"
+      content="aHR0cHM6Ly93d3cubWV0YXNrZXRjaC5pbg=="
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- 
+    - primary meta tags
+  -->
+    <title>MetaSketch</title>
+    {% load static %}
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="{% static 'home-images/logo4.png' %}"
+      type="image/svg+xml"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+
+    <link rel="stylesheet" type="text/css" href="{% static 'style2.css' %}" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link
+      rel="preload"
+      as="image"
+      href="{% static 'home-images/logo1.svg' %}"
+    />
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="{% static 'home-images/logo1.svg' %}"
+            width="300"
+            height="52"
+            alt="dprod logo"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <p class="navbar-title">Main Menu</p>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#project" class="navbar-link" data-nav-link>Projects</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#aboutus" class="navbar-link" data-nav-link>Our Team</a>
+            </li>
+
+            <!-- <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li> -->
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSd99Z2YV9cYqAElqvBikEUHb46Nnrda68oz3Emn_ZpF7RS8Jg/viewform?usp=sf_link"
+          target="_blank"
+          class="btn btn-primary"
+          >Contact Us</a
+        >
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section
+          class="section hero"
+          id="home"
+          aria-label="home"
+          style="padding-top: 130px"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 section-title">
+                Virtual <span class="span">Tours</span>Immersive Experiences
+              </h1>
+
+              <p class="section-text">
+                Pixels to Experiences: Virtual Tours for Unforgettable Marketing
+              </p>
+
+              <button class="btn btn-secondary">
+                <a href="projects.html"> Get Started</a>
+              </button>
+            </div>
+
+            <figure class="hero-banner has-shape">
+              <img
+                src="{% static 'home-images/main.jpg' %}"
+                width="521"
+                height="675"
+                alt="hero banner"
+                class="w-100"
+              />
+
+              <!-- <img src="./assets/images/main.jpg" width="106" height="78" alt="" class="shape"> -->
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #PROJECT
+      -->
+
+        <section class="section project" id="project" aria-label="project">
+          <div class="container">
+            <div class="title-wrapper">
+              <div>
+                <h2 class="h2 section-title">
+                  View our <span class="span"> Projects</span>
+                </h2>
+
+                <!-- <p class="section-text">
+                Aliquam tristique libero at dui sodales, et placerat orci lobortis. Donec metus lorem, vulputate at
+                sapien sit amet,
+                auctor iaculis lorem.
+              </p> -->
+              </div>
+            </div>
+
+            <ul class="project-list">
+              <li>
+                <div class="project-card">
+                  <a href="bontrue.html">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 615; --height: 391"
+                    >
+                      <img
+                        src="{% static 'home-images/1.jpg' %}"
+                        width="615"
+                        height="391"
+                        loading="lazy"
+                        alt="Plastic Credit Card"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <div>
+                      <h2 class="h3">
+                        <a href="#" class="card-title hover:underline"
+                          >Bontrue</a
+                        >
+                      </h2>
+
+                      <p class="card-tag">Banjara Hills, Hyderabad</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <a href="OmSreeGallaxy.html">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 615; --height: 391"
+                    >
+                      <img
+                        src="{% static 'home-images/2.jpg' %}"
+                        width="615"
+                        height="391"
+                        loading="lazy"
+                        alt="3D Illustration"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <div>
+                      <h2 class="h3">
+                        <a href="#" class="card-title hover:underline"
+                          >Om Sree Gallaxy</a
+                        >
+                      </h2>
+
+                      <p class="card-tag">Gundlapochampalli, Hyderabad</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="project-list" style="padding-top: 60px">
+              <li>
+                <div class="project-card">
+                  <a href="YouCanFitness.html">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 615; --height: 391"
+                    >
+                      <img
+                        src="{% static 'home-images/3.jpg' %}"
+                        width="615"
+                        height="391"
+                        loading="lazy"
+                        alt="Plastic Credit Card"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <div>
+                      <h2 class="h3">
+                        <a href="#" class="card-title hover:underline"
+                          >You Can Fitness</a
+                        >
+                      </h2>
+
+                      <p class="card-tag">Kondapur, Hyderabad</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <a href="UR7STARFITNESS.html">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 615; --height: 391"
+                    >
+                      <img
+                        src="{% static 'home-images/4.jpg' %}"
+                        width="615"
+                        height="391"
+                        loading="lazy"
+                        alt="3D Illustration"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <div>
+                      <h2 class="h3">
+                        <a href="#" class="card-title hover:underline"
+                          >UR 7STAR FITNESS</a
+                        >
+                      </h2>
+
+                      <p class="card-tag">Suncity, Hyderabad</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <a href="projects.html" class="btn-link">
+                <span class="span">Show More Projects</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+
+              <!-- <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="./assets/images/project-3.png" width="390" height="391" loading="lazy"
+                    alt="Statistics Mobile App" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title hover:underline">Statistics Mobile App</a>
+                    </h3>
+
+                    <p class="card-tag">Development, Mobile App</p>
+                  </div>
+
+                  <a href="#" class="card-link" aria-label="product details">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="./assets/images/project-4.png" width="390" height="391" loading="lazy"
+                    alt="Color Blending Effect" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title hover:underline">Color Blending Effect</a>
+                    </h3>
+
+                    <p class="card-tag">Design, Graphics</p>
+                  </div>
+
+                  <a href="#" class="card-link" aria-label="product details">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="./assets/images/project-5.png" width="390" height="391" loading="lazy" alt="3D Animation"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title hover:underline">3D Animation</a>
+                    </h3>
+
+                    <p class="card-tag">Design, Dimension</p>
+                  </div>
+
+                  <a href="#" class="card-link" aria-label="product details">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li> -->
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICES
+      -->
+
+        <!-- <section class="section service has-shape" id="services" aria-label="service">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">
+              Our included <span class="span">service</span>.
+            </h2>
+
+            <p class="section-text">
+              Aliquam tristique libero at dui sodales, et placerat orci lobortis. Donec metus lorem, vulputate at sapien
+              sit amet,
+              auctor iaculis lorem.
+            </p>
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-1.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Mobile Apps</a>
+                </h3>
+
+                <p class="card-text">
+                  We design professional looking yet simple Logo.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-2.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Branding Strategy</a>
+                </h3>
+
+                <p class="card-text">
+                  We design professional looking yet simple Logo.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-3.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Graphics Design</a>
+                </h3>
+
+                <p class="card-text">
+                  We design professional looking yet simple Logo.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-4.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Online Marketing</a>
+                </h3>
+
+                <p class="card-text">
+                  We design professional looking yet simple Logo.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/circle-shape.svg" width="158" height="158" loading="lazy" alt=""
+            class="shape shape-1">
+
+          <img src="./assets/images/triangle-shape-1.svg" width="158" height="158" loading="lazy" alt=""
+            class="shape shape-2">
+
+        </div>
+      </section> -->
+
+        <!-- ======= Team Section ======= -->
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section id="aboutus">
+          <div class="row">
+            <h1 class="size">Our Team</h1>
+          </div>
+
+          <div class="row">
+            <!-- Column 1-->
+            <div class="column">
+              <div class="card">
+                <div class="img-container">
+                  <img src="{% static 'home-images/krunal.jpg' %}" />
+                </div>
+                <h3>Krunal Samtani</h3>
+                <p>Chief Executive Officer</p>
+                <div class="icons">
+                  <!-- <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a> -->
+                  <a
+                    href="https://www.linkedin.com/in/krunal-samtani-536504241/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/Krunal-11" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="mailto:krunalsam2@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Column 2-->
+            <div class="column">
+              <div class="card">
+                <div class="img-container">
+                  <img src="{% static 'home-images/keerthan.jpg' %}" />
+                </div>
+                <h3>Keerthan Reddy</h3>
+                <p>Chief Technical Officer</p>
+                <div class="icons">
+                  <!-- <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a> -->
+                  <a
+                    href="https://www.linkedin.com/in/gudepu-keerthan-reddy/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/Keerthan-Reddy" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="mailto:keerthan.9492@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Column 3-->
+            <div class="column">
+              <div class="card">
+                <div class="img-container">
+                  <img src="{% static 'home-images/krish.jpg' %}" />
+                </div>
+                <h3>Krishna Vihar</h3>
+                <p>Chief Operational Officer</p>
+                <div class="icons">
+                  <!-- <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a> -->
+                  <a
+                    href="https://www.linkedin.com/in/krishna-vihar-601719228/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="mailto:m.v.krishnavihar@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <div class="img-container">
+                  <img src="{% static 'home-images/bhavesh.jpg' %}" />
+                </div>
+                <h3>Bhavesh Reddy</h3>
+                <p>Chief Marketing Officer</p>
+                <div class="icons">
+                  <!-- <a href="">
+                  <i class="fab fa-twitter"></i>
+                </a> -->
+                  <a
+                    href="https://www.linkedin.com/in/sai-bhavesh-mandyam-3440971a6/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="mailto:bhaveshmandy6321@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <div class="img-container">
+                  <img src="{% static 'home-images/dsp.jpeg' %}" />
+                </div>
+                <h3>Durga sree</h3>
+                <p>Chief Finance Officer</p>
+                <div class="icons">
+                  <!-- <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a> -->
+                  <a
+                    href="https://www.linkedin.com/in/durga-sree-priya-vattikonda-392852240/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="mailto:vattikondadurgasreepriya21cs@student.vardhaman.org"
+                    target="_blank"
+                  >
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <div class="img-container">
+                  <img src="{% static 'home-images/loki.jpg' %}" />
+                </div>
+                <h3>Lokeshwari Vinya</h3>
+                <p>Business Mentor</p>
+                <div class="icons">
+                  <!-- <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a> -->
+                  <a
+                    href="https://www.linkedin.com/in/dr-viyyapu-lokeshwari-vinya-6055b9181/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <!-- <a href="#">
+                  <i class="fab fa-github"></i>
+                </a> -->
+                  <a href="mailto:vinya593@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="team.html" class="btn-link" style="margin-left: 100px">
+            <span class="span">Know More</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+        </section>
+
+        <!-- 
+        - #BLOG
+      -->
+
+        <!-- <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">
+              Our inside <span class="span">news</span>.
+            </h2>
+
+
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 595; --height: 391;">
+                  <img src="./assets/images/blog-1.png" width="595" height="391" loading="lazy"
+                    alt="Designer's Checklist for Every UX Project." class="img-cover">
+
+                
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="meta-list">
+
+                    <li class="meta-item">
+                      <img src="./assets/images/author-1.png" width="18" height="18" loading="lazy" alt="Alice Williams"
+                        class="author-img">
+
+                        <p class="meta-item-text">Krunal Samtani</p>
+
+                      
+                    </li>
+
+                    <li class="meta-item">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="2022-12-20" class="meta-item-text">December 20, 2022</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="blog1.html" class="card-title hover:underline">
+                      Designer's Checklist for Every UX Project.
+                    </a>
+                  </h3>
+
+                  <a href="blog1.html" class="btn-link">
+                    <span class="span">Read more</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 595; --height: 391;">
+                  <img src="./assets/images/blog-2.png" width="595" height="391" loading="lazy"
+                    alt="Designer's Checklist for Every UX Project." class="img-cover">
+
+                  
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="meta-list">
+
+                    <li class="meta-item">
+                      <img src="./assets/images/author-2.png" width="18" height="18" loading="lazy" alt="Jaxson Geldit"
+                        class="author-img">
+
+                      <p class="meta-item-text">Bhavesh</p>
+                    </li>
+
+                    <li class="meta-item">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="2022-12-20" class="meta-item-text">December 20, 2022</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="blog2.html" class="card-title hover:underline">
+                      Designer's Checklist for Every UX Project.
+                    </a>
+                  </h3>
+
+                  <a href="blog2.html" class="btn-link">
+                    <span class="span">Read more</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 595; --height: 391;">
+                  <img src="./assets/images/blog-3.png" width="595" height="391" loading="lazy"
+                    alt="Designer's Checklist for Every UX Project." class="img-cover">
+
+                 
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="meta-list">
+
+                    <li class="meta-item">
+                      <img src="./assets/images/author-1.png" width="18" height="18" loading="lazy" alt="Cooper Saris"
+                        class="author-img">
+
+                      <p class="meta-item-text">Krishna Vihar</p>
+                    </li>
+
+                    <li class="meta-item">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="2022-12-20" class="meta-item-text">December 20, 2022</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="blog3.html" class="card-title hover:underline">
+                      Designer's Checklist for Every UX Project.
+                    </a>
+                  </h3>
+
+                  <a href="blog3.html" class="btn-link">
+                    <span class="span">Read more</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section> -->
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img
+                src="{% static 'home-images/logo1.svg' %}"
+                width="209"
+                height="52"
+                alt="dprod logo"
+              />
+            </a>
+
+            <a
+              href="mailto:metasketch.co@gmail.com"
+              target="_blank"
+              class="footer-link"
+              >metasketch.co@gmailcom</a
+            >
+
+            <a href="tel:+91 9347950266" class="footer-link">+91 9347950266</a>
+
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/metasketch/"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <img
+                    src="{% static 'home-images/linkedin-icon.png' %}"
+                    alt=""
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/metasketch_/"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <img
+                    src="{% static 'home-images/linstagram-icon.png' %}"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            Copyright 2023 All Rights Reserved by<br />
+            Metasketch Technology Private Limited
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
