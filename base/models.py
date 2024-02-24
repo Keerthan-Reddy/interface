@@ -6,7 +6,8 @@ class Client(models.Model):
     info = models.TextField()
     location = models.CharField(max_length=255)
     website = models.URLField()
-    default_link = models.URLField(default="",max_length=1000)  # Add a field to store the default link
+    default_link = models.URLField(default="",max_length=1000)
+    logoimage = models.ImageField(upload_to='logos/', null=True, blank=True)
     
     def __str__(self):
         return self.name

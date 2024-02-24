@@ -66,10 +66,31 @@
     </script>
   </head>
   <body id="main">
+    {% comment %}
     <div class="logo">
       <a href="{{ client.website }}"
         ><img src="{% static 'home-images/logo3.svg' %}" alt="MetaSketch"
       /></a>
+    </div>
+    {% endcomment %}
+    <div class="logo">
+      {% if client.logoimage %}
+      <a href="{{ client.website }}">
+        <img src="{{ client.logoimage.url }}" alt="Client Logo"
+      /></a>
+      {% else %}
+      <a href="https://metasketch.in/"
+        ><img src="{% static 'home-images/logo3.svg' %}" alt="Default Logo"
+      /></a>
+      {% endif %} {% comment %}
+      <div class="logo">
+        {% if client.logoimage %}
+        <img src="{{ client.logoimage.url }}" alt="Client Logo" />
+        {% else %}
+        <p>No logo image found</p>
+        {% endif %}
+      </div>
+      {% endcomment %}
     </div>
 
     <div class="text-box" id="box" style="display: none">
